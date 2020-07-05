@@ -18,7 +18,9 @@
     text-align: center;
     width: 100%;
     position: absolute;
-    bottom: 50px; }
+    bottom: 50px;
+    display: flex;
+    justify-content: center; }
     .slider .slide-button button {
       cursor: pointer;
       color: transparent;

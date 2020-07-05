@@ -46,7 +46,6 @@ function Carousel() {
             style={{ transform: `translateX(${position}%)` }}
             key={id}
           >
-            {" "}
             <img src={src} alt={title} />
             <h1 className="title">{title}</h1>
           </div>
@@ -55,11 +54,13 @@ function Carousel() {
       <div className="slide-button">
         {images.map(({ id }) => {
           return (
+            <div key={id}>
             <SlideButton
               id={id}
               sliderNum={sliderNum}
               HandleClick={HandleClick}
             />
+            </div>
           );
         })}
       </div>

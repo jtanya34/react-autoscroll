@@ -18,8 +18,10 @@
        .slide-button{
         text-align:center; 
         width:100%;
-         position:absolute;
-          bottom:50px;
+        position:absolute;
+        bottom:50px;
+        display: flex;
+        justify-content: center;
           button{
             cursor:pointer;
             color:transparent;

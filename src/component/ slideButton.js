@@ -1,15 +1,13 @@
-import React from "react";
+import React from 'react';
 
-function SlideButton({ sliderNum, id, HandleClick }) {
-  return (
-    <>
-      <button
-        key={id}
-        className={sliderNum === id ? "show" : ""}
-        onClick={() => HandleClick(id)}
-      />
-    </>
-  );
-}
 
-export default SlideButton;
+
+ function SlideButton({sliderNum,id,HandleClick}){
+     return(
+         <>
+          <button className={sliderNum===id ?'show':''} onClick={()=>HandleClick(id)}/>
+       </>
+     )
+ }
+
+ export default SlideButton;
